@@ -1,2 +1,12 @@
-# release-quality-analytics-platform
-Enterprise QA Metrics Dashboard using SQL, Python and Power BI.
+# Release Quality Analytics Platform
+
+## Project Overview
+
+This project monitors software release quality using SQL, Python and Power BI.
+
+## Technologies
+
+- SQLite
+- SQL
+- Python
+- Power BI
