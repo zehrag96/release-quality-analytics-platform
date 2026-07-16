@@ -1,0 +1,1 @@
+SELECT p.project_name AS Project,r.release_name AS Release,COUNT(b.bug_id) AS Total_Bugs,SUM(CASE WHEN b.status='Closed' THEN 1 ELSE 0 END) AS Closed_Bugs FROM Releases r JOIN Projects p ON r.project_id=p.project_id JOIN Bugs b ON b.release_id=r.release_id GROUP BY p.project_name,r.release_name ORDER BY r.release_name;

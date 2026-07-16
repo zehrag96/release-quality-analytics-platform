@@ -1,0 +1,1 @@
+SELECT u.full_name,COUNT(t.testcase_id) executed_tests FROM Users u JOIN TestCases t ON u.user_id=t.executed_by GROUP BY u.full_name ORDER BY executed_tests DESC;

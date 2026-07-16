@@ -1,0 +1,1 @@
+SELECT p.project_name, COUNT(r.release_id) AS release_count FROM Projects p JOIN Releases r ON p.project_id=r.project_id GROUP BY p.project_name ORDER BY release_count DESC;

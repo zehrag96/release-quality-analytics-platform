@@ -1,0 +1,1 @@
+SELECT p.project_name,COUNT(DISTINCT r.release_id) releases,COUNT(b.bug_id) bugs FROM Projects p LEFT JOIN Releases r ON p.project_id=r.project_id LEFT JOIN Bugs b ON r.release_id=b.release_id GROUP BY p.project_name ORDER BY p.project_name;

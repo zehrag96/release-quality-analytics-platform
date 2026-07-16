@@ -1,0 +1,1 @@
+SELECT title,status,priority FROM TestCases WHERE status='Failed';

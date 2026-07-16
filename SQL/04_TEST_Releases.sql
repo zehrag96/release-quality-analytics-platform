@@ -1,0 +1,1 @@
+SELECT p.project_name,r.release_name,r.environment FROM Projects p JOIN Releases r ON p.project_id=r.project_id WHERE r.environment='TEST';

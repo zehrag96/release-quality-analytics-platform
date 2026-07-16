@@ -1,0 +1,1 @@
+SELECT status,COUNT(*) testcase_count FROM TestCases GROUP BY status;

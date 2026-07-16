@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS active_projects FROM Projects WHERE status='Active';

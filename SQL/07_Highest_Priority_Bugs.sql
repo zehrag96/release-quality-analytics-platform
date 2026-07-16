@@ -1,0 +1,1 @@
+SELECT title,priority,severity,status FROM Bugs WHERE priority='Highest';

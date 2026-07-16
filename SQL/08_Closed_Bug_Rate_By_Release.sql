@@ -1,0 +1,1 @@
+SELECT r.release_name,COUNT(b.bug_id) total_bugs,SUM(CASE WHEN b.status='Closed' THEN 1 ELSE 0 END) closed_bugs,ROUND(100.0*SUM(CASE WHEN b.status='Closed' THEN 1 ELSE 0 END)/COUNT(b.bug_id),2) closed_bug_rate FROM Releases r JOIN Bugs b ON r.release_id=b.release_id GROUP BY r.release_name;
