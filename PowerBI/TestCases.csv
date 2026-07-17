@@ -1,0 +1,21 @@
+testcase_id,release_id,title,test_type,priority,status,executed_by,execution_date
+1,1,Login functionality,Functional,High,Passed,2,2026-07-01
+2,1,Dashboard widgets,Regression,Medium,Passed,5,2026-07-01
+3,1,User role permissions,Functional,High,Failed,6,2026-07-02
+4,1,Company logo validation,Smoke,Low,Passed,2,2026-07-02
+5,1,Logout functionality,Functional,Medium,Passed,5,2026-07-02
+6,2,Excel export,Regression,High,Failed,2,2026-08-01
+7,2,API response validation,Integration,High,Blocked,6,2026-08-01
+8,2,Login security,Functional,Highest,Passed,5,2026-08-02
+9,2,Performance check,Regression,Medium,Passed,2,2026-08-02
+10,3,Search functionality,Functional,High,Passed,5,2026-07-05
+11,3,Session timeout,Regression,Medium,Passed,2,2026-07-05
+12,3,User profile update,Functional,Medium,Passed,6,2026-07-06
+13,3,Notification service,Integration,High,Failed,5,2026-07-06
+14,4,Payment validation,Functional,High,Blocked,2,2026-06-15
+15,4,Mobile UI,Smoke,Low,Passed,5,2026-06-15
+16,4,Push notification,Integration,Medium,Not Executed,6,2026-06-16
+17,5,Application startup,Smoke,Highest,Failed,2,2026-09-01
+18,5,Email notification,Functional,Medium,Passed,5,2026-09-01
+19,5,Order creation,Regression,High,Passed,6,2026-09-02
+20,5,Payment gateway,Integration,Highest,Blocked,2,2026-09-02

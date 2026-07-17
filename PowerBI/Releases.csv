@@ -1,0 +1,6 @@
+release_id,project_id,release_name,planned_date,actual_date,status,environment
+1,1,v1.0.0,2026-07-01,2026-07-01,Released,PROD
+2,1,v1.1.0,2026-08-15,,Planned,TEST
+3,2,v2.3.0,2026-07-10,2026-07-12,Released,PROD
+4,3,v1.0.0,2026-06-20,,Cancelled,UAT
+5,5,v3.0.0,2026-09-01,,In Progress,TEST

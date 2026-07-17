@@ -1,0 +1,11 @@
+bug_id,release_id,title,description,priority,severity,status,reporter_id,assignee_id,created_date,closed_date
+1,1,Login button not working,Login fails after clicking button,Highest,Critical,Closed,2,4,2026-07-01,2026-07-02
+2,1,Dashboard loading slowly,Dashboard opens in 15 seconds,Medium,Medium,Closed,5,4,2026-07-02,2026-07-03
+3,1,Company logo incorrect,Wrong company logo displayed,Low,Low,Open,6,4,2026-07-03,
+4,2,Export Excel failed,Excel export throws error,High,High,Open,2,4,2026-08-01,
+5,2,Role permission issue,Guest user accessed admin page,Highest,Critical,In Progress,6,4,2026-08-02,
+6,3,Search returns wrong data,Search result list is incorrect,High,High,Closed,5,4,2026-07-05,2026-07-06
+7,3,Session timeout,Unexpected logout after 5 minutes,Medium,Medium,Closed,2,4,2026-07-06,2026-07-07
+8,4,Payment validation error,Validation message missing,High,High,Rejected,5,4,2026-06-15,
+9,5,Notification not sent,Email notification not delivered,Medium,Medium,Open,6,4,2026-09-01,
+10,5,Crash on startup,Application crashes immediately,Highest,Critical,Open,2,4,2026-09-02,
