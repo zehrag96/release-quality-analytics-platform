@@ -50,46 +50,44 @@ summary = summary.merge(
     how="left"
 )
 
-# Fill only numeric columns
+# Fill missing values
 summary["Total Bugs"] = summary["Total Bugs"].fillna(0).astype(int)
 summary["Total Test Cases"] = summary["Total Test Cases"].fillna(0).astype(int)
 
 # -----------------------------------
-# Bug Per Test Ratio
+# Bug/Test Ratio
 # -----------------------------------
 summary["Bug per Test"] = (
     summary["Total Bugs"] /
     summary["Total Test Cases"].replace(0, pd.NA)
-).fillna(0).round(2)
+)
 
-# -----------------------------------
-# Keep only required columns
-# -----------------------------------
-summary = summary[
-    [
-        "release_name",
-        "Total Bugs",
-        "Total Test Cases",
-        "Bug per Test"
-    ]
-]
-
-summary.rename(
-    columns={
-        "release_name": "Release"
-    },
-    inplace=True
+summary["Bug per Test"] = (
+    summary["Bug per Test"]
+    .fillna(0)
+    .astype(float)
+    .round(2)
 )
 
 # -----------------------------------
-# Export CSV
+# Final Output
 # -----------------------------------
+summary = summary[[
+    "release_name",
+    "Total Bugs",
+    "Total Test Cases",
+    "Bug per Test"
+]]
+
+summary.rename(columns={
+    "release_name": "Release"
+}, inplace=True)
+
 summary.to_csv(
     OUTPUT_DIR / "release_health.csv",
-    index=False
+    index=False,
+    float_format="%.2f"
 )
 
-print("\n=== Release Health Summary ===\n")
 print(summary)
-
-print("\nCSV file created successfully!")
+print("\nrelease_health.csv created successfully.")
