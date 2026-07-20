@@ -1,0 +1,5 @@
+bug_id,release_id,title,description,priority,severity,status,reporter_id,assignee_id,created_date,closed_date
+3,1,Company logo incorrect,Wrong company logo displayed,Low,Low,Open,6,4,2026-07-03,
+4,2,Export Excel failed,Excel export throws error,High,High,Open,2,4,2026-08-01,
+9,5,Notification not sent,Email notification not delivered,Medium,Medium,Open,6,4,2026-09-01,
+10,5,Crash on startup,Application crashes immediately,Highest,Critical,Open,2,4,2026-09-02,
